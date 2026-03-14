@@ -1,0 +1,10 @@
+name: Update Formula                                                                                                                                    
+
+on:                                                                                                                                                     
+  repository_dispatch:                                                                                                                                
+    types: [update-formula]                                                                                                                           
+
+jobs:
+  update:
+    name: Update ninetrix formula
+    runs-on: ubuntu-latest
