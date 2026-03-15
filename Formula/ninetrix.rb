@@ -14,7 +14,9 @@ class Ninetrix < Formula
 
   def install
     venv = virtualenv_create(libexec, "python3.12")
-    venv.pip_install_and_link buildpath
+    system "#{libexec}/bin/pip", "install", "ninetrix==#{version}"                                                                               
+    bin.install_symlink "#{libexec}/bin/ninetrix"                                                                                         
+    bin.install_symlink "#{libexec}/bin/agentfile" 
   end
 
   test do
