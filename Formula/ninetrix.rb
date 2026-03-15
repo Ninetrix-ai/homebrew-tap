@@ -1,7 +1,9 @@
 # This file is auto-updated by release-cli.yml after each PyPI publish.
 # It lives in github.com/Ninetrix-ai/homebrew-tap as Formula/ninetrix.rb
 
-class Ninetrix < Formula                                  
+class Ninetrix < Formula      
+  include Language::Python::Virtualenv                                                                                                          
+
   desc "Build and run AI agents as containers"
   homepage "https://ninetrix.io"
   url "https://files.pythonhosted.org/packages/source/n/ninetrix/ninetrix-0.1.4.tar.gz"
