@@ -6,8 +6,8 @@ class Ninetrix < Formula
 
   desc "Build and run AI agents as containers"
   homepage "https://ninetrix.io"
-  url "https://files.pythonhosted.org/packages/source/n/ninetrix/ninetrix-0.1.6.tar.gz"
-  sha256 "0a0c1fcb140a4838783342e2e4d5f21782f178db6a64574818cf6aef7ad0ac2b"
+  url "https://files.pythonhosted.org/packages/source/n/ninetrix/ninetrix-0.2.1.tar.gz"
+  sha256 "ab8f10db9681c6ca5e1cd7ac78fb5e92d8744805c29c72d72994cce634d333b3"
   license "Apache-2.0"
 
   depends_on "python@3.12"
